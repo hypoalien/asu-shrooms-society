@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "content": "ASU Shrooms Society is dedicated to fostering an inclusive community of students and others interested in learning about and appreciating the diverse world of fungi.",
+    "heading": "What we do"
+  },
+  "events": [
+    {
+      "eventName": "Mushroom Cultivation Workshop",
+      "eventDesc": "Learn how to grow your own gourmet and medicinal mushrooms using simple low-cost methods. This hands-on workshop covers everything from selecting the right species to harvesting your first flush.",
+      "eventDate": "Nov 2, 6:00 PM",
+      "eventLink": ""
+    },
+    {
+      "eventName": "Mushroom Cultivation Workshop",
+      "eventDesc": "Learn how to grow your own gourmet and medicinal mushrooms using simple low-cost methods. This hands-on workshop covers everything from selecting the right species to harvesting your first flush.",
+      "eventDate": "Nov 2, 6:00 PM",
+      "eventLink": ""
+    },
+    {
+      "eventName": "Mushroom Cultivation Workshop",
+      "eventDesc": "Learn how to grow your own gourmet and medicinal mushrooms using simple low-cost methods. This hands-on workshop covers everything from selecting the right species to harvesting your first flush.",
+      "eventDate": "Nov 2, 6:00 PM",
+      "eventLink": ""
+    }
+  ],
+  "facts": [
+    {
+      "factHeading": "Charectersitcs",
+      "points": [
+        {
+          "pointHeading": "Cap",
+          "pointDecs": " 2-8 cm in diameter. conical to convex in shape. dry. smooth. and light brown to white in color."
+        },
+        {
+          "pointHeading": "Cap",
+          "pointDecs": " 2-8 cm in diameter. conical to convex in shape. dry. smooth. and light brown to white in color."
+        },
+        {
+          "pointHeading": "Cap",
+          "pointDecs": " 2-8 cm in diameter. conical to convex in shape. dry. smooth. and light brown to white in color."
+        },
+        {
+          "pointHeading": "Cap",
+          "pointDecs": " 2-8 cm in diameter. conical to convex in shape. dry. smooth. and light brown to white in color."
+        },
+        {
+          "pointHeading": "Cap",
+          "pointDecs": " 2-8 cm in diameter. conical to convex in shape. dry. smooth. and light brown to white in color."
+        }
+      ]
+    }
+  ]
+}

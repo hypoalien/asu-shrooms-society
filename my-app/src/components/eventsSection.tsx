@@ -13,7 +13,7 @@ export default function Events() {
       </h1>
       {data.events.map(function (event,index) {
         return (
-          <div className="flex pt-4 flex-col-reverse lg:flex-row gap-6" key={index}>
+          <div key={index} className="flex pt-4 flex-col-reverse lg:flex-row gap-6" >
             <div>
               <div className=" text-sm text-muted-foreground text-green-700 text-left pt-1 md:pt-6 ">
                 {event.eventDate}

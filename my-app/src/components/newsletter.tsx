@@ -9,10 +9,10 @@ export default function Newsletter() {
         Get in touch
       </h1>
       <h1 className=" text-sm text-muted-foreground text-green-700 text-left pt-1 ">
-        We're always looking for new members, volunteers, and potential
+       {` We're always looking for new members, volunteers, and potential
         collaborators. If you have any questions or ideas, please reach out to
         us via email or social media. You can also sign up for our newsletter to
-        stay updated on upcoming events and activities.
+        stay updated on upcoming events and activities.`}
       </h1>
       <div className="md:w-1/3 ">
         <h1 className=" text-sm font-bold text-black text-left pt-6 ">

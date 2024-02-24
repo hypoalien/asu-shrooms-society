@@ -54,7 +54,7 @@ export function MainNav() {
           Gallery
         </Link>
         <Link
-          href="/shroom-of-the-day"
+          href="/shroom-of-the-week"
           className={cn(
             "transition-colors hover:text-foreground/80",
             pathname?.startsWith("/examples")
@@ -62,18 +62,18 @@ export function MainNav() {
               : "text-foreground/60"
           )}
         >
-          Shroom of the day
+          Shroom of the week
         </Link>
         <Link
-          href={siteConfig.links.github}
+          href={siteConfig.links.SunDevilSync}
           className={cn(
             "hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block"
           )}
         >
-          Connect
+          Sun Devil Sync
         </Link>
         <Link
-          href={siteConfig.links.github}
+          href={siteConfig.links.discord}
           className={cn(
             "hidden text-foreground/60 transition-colors hover:text-foreground/80 lg:block ",
             buttonVariants({ variant: "secondary" })

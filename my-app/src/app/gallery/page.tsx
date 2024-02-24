@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <section className="flex flex-col justify-left bg-white w-fill h-fill p-6 sm:px-32 sm:pt-6">
-        <DialogDemo></DialogDemo>
+        {/* <DialogDemo></DialogDemo> */}
         <h1 className="md:text-3xl text-3xl font-bold text-black text-left ">
           Gallery
         </h1>
@@ -56,7 +56,7 @@ export default function Home() {
           </ScrollArea>
         </div>
       </section>
-      <section className="flex flex-col justify-left bg-white w-fill h-fill p-6 sm:px-32 sm:pt-6">
+      {/* <section className="flex flex-col justify-left bg-white w-fill h-fill p-6 sm:px-32 sm:pt-6">
         <h1 className="md:text-3xl text-3xl font-bold text-black text-left ">
           Gallery
         </h1>
@@ -105,7 +105,7 @@ export default function Home() {
             <ScrollBar orientation="horizontal" />
           </ScrollArea>
         </div>
-      </section>
+      </section> */}
       
     </>
   );

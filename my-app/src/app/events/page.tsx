@@ -11,6 +11,8 @@ import Hero from "@/components/hero";
 import About from "@/components/aboutSection";
 import Events from "@/components/eventsSection";
 import { EventsList } from "@/components/team-members";
+import data from "../data.json"
+
 
 export default function Home() {
   return (
@@ -19,11 +21,11 @@ export default function Home() {
         <h1 className="md:text-3xl text-3xl font-bold text-black text-left ">
           Upcoming events
         </h1>
-        <EventsList />
+        <EventsList events={data.pastEvents} />
         <h1 className="md:text-3xl text-3xl font-bold text-black text-left ">
           Past events
         </h1>
-        <EventsList />
+        <EventsList events={data.pastEvents} />
       </section>
     </>
   );

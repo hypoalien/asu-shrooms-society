@@ -9,44 +9,47 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import data from "../app/data.json";
+import Link from "next/link";
 
-export function EventsList() {
+export function EventsList(props:{events:{eventName:string,eventDate:string,eventDesc:string,img:string,eventLink:string}[]}) {
   return (
     <>
-      <div>
-        <CardContent className="grid gap-6 pt-6">
-          {data.events.map(function (event) {
-            return (
-              <div className="flex items-center justify-between pt-2 space-x-4">
-                <div className="flex-col space-y-4">
-                  <div className="flex justify-center">
-                    {" "}
-                    {/* Added this div for horizontal centering */}
-                    <Avatar className="h-12  w-12 content-center">
-                      <AvatarImage src="/avatars/02.png" />
-                      <AvatarFallback>JL</AvatarFallback>
-                    </Avatar>
-                  </div>
 
-                  <div>
-                    <p className="text-sm font-medium inline leading-none">
-                      {`${event.eventName} | ${event.eventDate}`}
-                    </p>
-                    <p className="text-sm text-green-600 text-muted-foreground pt-2">
-                      Join us for a guided mushroom forage in the beautiful
-                      Sonoran Desert.
-                    </p>
-                  </div>
-                  <Button variant={"secondary"} className="w-full">
-                    View
-                  </Button>
-                </div>
+    <div>
+      <CardContent className="grid gap-6 pt-6">
+        {props.events.map(function(event){
+          return(
+            <div className="flex items-center justify-between pr-4 space-x-4 min-w-72">
+            <div className="flex items-center space-x-4 ">
+              <Avatar className="h-12 w-12">
+                <AvatarImage src={event.img} />
+                <AvatarFallback>JL</AvatarFallback>
+              </Avatar>
+              <div>
+                <p className="text-sm font-medium inline leading-none">
+                  {`${event.eventName} | ${event.eventDate}`}
+                </p>
+                <p className="text-sm text-green-600 text-muted-foreground pt-2">
+                  {event.eventDesc}
+                </p>
               </div>
-            );
-          })}
-        </CardContent>
-      </div>
+            </div>
+            <Link href={`${event.eventLink}`}>
+                {" "}
+                <Button
+                  variant="secondary"
+                  className="text-black-500 bg-green-500"
+                >
+                  View
+                </Button>
+              </Link>
+          </div>
+          )
+        })}
+       
+      </CardContent>
+    </div>
+    
     </>
   );
 }

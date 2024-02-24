@@ -1,13 +1,13 @@
 
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-
+import data from "../data.json"
 export default function Home() {
   return (
     <>
       <section className="flex flex-col justify-left bg-white w-fill h-fill p-6 sm:px-32 sm:pt-6">
         <h1 className="md:text-1xl text-1xl font-bold text-black text-left ">
-          Shroom of the day
+          Shroom of the week
         </h1>
         <Card
           className="w-full h-48 mt-4 bg-white rounded-2xl shadow-xl bg-no-repeat	bg-cover "
@@ -29,16 +29,15 @@ export default function Home() {
           {/* <Separator className="mt-4"></Separator> */}
           <div className="grid grid-cols-2 gap-3">
             
-            {[...Array(5)].map((_, index) => (
+            {data.facts[0].points.map((point,index) => (
               
               <div key={index}>
                 <Separator className="mt-4"></Separator>
                 <h4 className="text-sm text-muted-foreground text-left pt-2">
-                  Cap
+                  {point.pointHeading}
                 </h4>
                 <h4 className="text-sm text-muted-foreground text-left pt-2">
-                  2-8 cm in diameter. conical to convex in shape. dry. smooth.
-                  and light brown to white in color.
+                  {point.pointDecs}
                 </h4>
               </div>
             ))}
@@ -46,7 +45,7 @@ export default function Home() {
           <Separator className="mt-4"></Separator>
         </div>
         {/* Characteristics */}
-        <h1 className="md:text-1xl pt-4 text-1xl font-bold text-black text-left ">
+        {/* <h1 className="md:text-1xl pt-4 text-1xl font-bold text-black text-left ">
           Characteristics
         </h1>
         <div>
@@ -95,55 +94,27 @@ export default function Home() {
             </div>
           </div>
           <Separator className="mt-4"></Separator>
-        </div>
+        </div> */}
         {/* Benifits */}
         <h1 className="md:text-1xl pt-8 text-1xl font-bold text-black text-left ">
           Benefits
         </h1>
         <div>
-          <Separator className="mt-4"></Separator>
-          <div className="flex flex-row gap-3 ">
-            <div>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                Cap
-              </h4>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                2-8 cm in diameter. conical to convex in shape. dry. smooth. and
-                light brown to white in color.
-              </h4>
-            </div>
-            <div>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                Cap
-              </h4>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                2-8 cm in diameter. conical to convex in shape. dry. smooth. and
-                light brown to white in color.
-              </h4>
-            </div>
-          </div>
-          <Separator className="mt-4"></Separator>
-        </div>
-        <div>
-          <div className="flex flex-row gap-3 ">
-            <div>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                Cap
-              </h4>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                2-8 cm in diameter. conical to convex in shape. dry. smooth. and
-                light brown to white in color.
-              </h4>
-            </div>
-            <div>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                Cap
-              </h4>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                2-8 cm in diameter. conical to convex in shape. dry. smooth. and
-                light brown to white in color.
-              </h4>
-            </div>
+          {/* <Separator className="mt-4"></Separator> */}
+          <div className="grid grid-cols-2 gap-3">
+            
+            {data.facts[1].points.map((point,index) => (
+              
+              <div key={index}>
+                <Separator className="mt-4"></Separator>
+                <h4 className="text-sm text-muted-foreground text-left pt-2">
+                  {point.pointHeading}
+                </h4>
+                <h4 className="text-sm text-muted-foreground text-left pt-2">
+                  {point.pointDecs}
+                </h4>
+              </div>
+            ))}
           </div>
           <Separator className="mt-4"></Separator>
         </div>
@@ -153,49 +124,21 @@ export default function Home() {
           Interesting Facts
         </h1>
         <div>
-          <Separator className="mt-4"></Separator>
-          <div className="flex flex-row gap-3 ">
-            <div>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                Cap
-              </h4>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                2-8 cm in diameter. conical to convex in shape. dry. smooth. and
-                light brown to white in color.
-              </h4>
-            </div>
-            <div>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                Cap
-              </h4>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                2-8 cm in diameter. conical to convex in shape. dry. smooth. and
-                light brown to white in color.
-              </h4>
-            </div>
-          </div>
-          <Separator className="mt-4"></Separator>
-        </div>
-        <div>
-          <div className="flex flex-row gap-3 ">
-            <div>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                Cap
-              </h4>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                2-8 cm in diameter. conical to convex in shape. dry. smooth. and
-                light brown to white in color.
-              </h4>
-            </div>
-            <div>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                Cap
-              </h4>
-              <h4 className=" text-sm  text-muted-foreground text-left pt-2 ">
-                2-8 cm in diameter. conical to convex in shape. dry. smooth. and
-                light brown to white in color.
-              </h4>
-            </div>
+          {/* <Separator className="mt-4"></Separator> */}
+          <div className="grid grid-cols-2 gap-3">
+            
+            {data.facts[2].points.map((point,index) => (
+              
+              <div key={index}>
+                <Separator className="mt-4"></Separator>
+                <h4 className="text-sm text-muted-foreground text-left pt-2">
+                  {point.pointHeading}
+                </h4>
+                <h4 className="text-sm text-muted-foreground text-black text-left pt-2">
+                  {point.pointDecs}
+                </h4>
+              </div>
+            ))}
           </div>
           <Separator className="mt-4"></Separator>
         </div>

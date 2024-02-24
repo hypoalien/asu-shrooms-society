@@ -20,31 +20,41 @@ export const docsConfig: DocsConfig = {
       href: "/gallery",
     },
     {
-      title: "Shroom of the day",
-      href: "/shroom-of-the-day",
+      title: "Shroom of the week",
+      href: "/shroom-of-the-week",
     },
-    {
-      title: "Connect",
-      href: "https://github.com/hypoalien/",
-    },
-    {
-      title: "Join",
-      href: "https://github.com/hypoalien/",
-      external: true,
-    },
-    {
-      title: "Twitter",
-      href: "https://twitter.com/anisettyanudeep",
-      external: true,
-    },
+    // {
+    //   title: "Sun Devil Sync",
+    //   href: "https://asu.campuslabs.com/engage/organization/shroomsociety",
+    // },
+    // {
+    //   title: "Discord",
+    //   href: "https://discord.gg/3bNqaZeF66",
+    //   external: true,
+    // },
+    // {
+    //   title: "Twitter",
+    //   href: "https://twitter.com/anisettyanudeep",
+    //   external: true,
+    // },
   ],
   sidebarNav: [
     {
       title: "Follow Us",
       items: [
         {
-          title: "Introduction",
+          title: "Instagram",
           href: "/",
+          items: [],
+        },
+        {
+          title: "Sun Devil Sync",
+          href: "https://asu.campuslabs.com/engage/organization/shroomsociety",
+          items: [],
+        },
+        {
+          title: "Discord",
+          href: "https://discord.gg/3bNqaZeF66",
           items: [],
         },
       ],

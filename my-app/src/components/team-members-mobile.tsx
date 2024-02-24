@@ -19,9 +19,9 @@ export function EventsList() {
     <>
       <div>
         <CardContent className="grid gap-6 pt-6">
-          {data.events.map(function (event) {
+          {data.events.map(function (event,index) {
             return (
-              <div className="flex items-center justify-between p-2 space-x-4">
+              <div className="flex items-center justify-between p-2 space-x-4" key={index}>
                 <div className="flex-col space-y-4">
                   <div className="flex justify-center">
                     {" "}

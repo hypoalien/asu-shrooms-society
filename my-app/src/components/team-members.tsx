@@ -17,9 +17,9 @@ export function EventsList(props:{events:{eventName:string,eventDate:string,even
 
     <div>
       <CardContent className="grid gap-6 pt-6">
-        {props.events.map(function(event){
+        {props.events.map(function(event,index){
           return(
-            <div className="flex items-center justify-between pr-4 space-x-4 min-w-72">
+            <div className="flex items-center justify-between pr-4 space-x-4 min-w-72" key={index}>
             <div className="flex items-center space-x-4 ">
               <Avatar className="h-12 w-12">
                 <AvatarImage src={event.img} />

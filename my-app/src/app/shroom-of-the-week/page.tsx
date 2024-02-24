@@ -33,7 +33,7 @@ export default function Home() {
               
               <div key={index}>
                 <Separator className="mt-4"></Separator>
-                <h4 className="text-sm text-muted-foreground text-left pt-2">
+                <h4 className="text-sm text-muted-foreground text-left font-bold pt-2">
                   {point.pointHeading}
                 </h4>
                 <h4 className="text-sm text-muted-foreground text-left pt-2">
@@ -107,7 +107,7 @@ export default function Home() {
               
               <div key={index}>
                 <Separator className="mt-4"></Separator>
-                <h4 className="text-sm text-muted-foreground text-left pt-2">
+                <h4 className="text-sm text-muted-foreground text-left font-bold pt-2">
                   {point.pointHeading}
                 </h4>
                 <h4 className="text-sm text-muted-foreground text-left pt-2">
@@ -131,7 +131,7 @@ export default function Home() {
               
               <div key={index}>
                 <Separator className="mt-4"></Separator>
-                <h4 className="text-sm text-muted-foreground text-left pt-2">
+                <h4 className="text-sm text-muted-foreground text-left font-bold pt-2">
                   {point.pointHeading}
                 </h4>
                 <h4 className="text-sm text-muted-foreground text-black text-left pt-2">

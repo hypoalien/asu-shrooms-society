@@ -21,7 +21,7 @@ export default function Home() {
         <h1 className="md:text-3xl text-3xl font-bold text-black text-left ">
           Upcoming events
         </h1>
-        <EventsList events={data.pastEvents} />
+        <EventsList events={data.events} />
         <h1 className="md:text-3xl text-3xl font-bold text-black text-left ">
           Past events
         </h1>

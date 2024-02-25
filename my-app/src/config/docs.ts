@@ -44,7 +44,7 @@ export const docsConfig: DocsConfig = {
       items: [
         {
           title: "Instagram",
-          href: "/",
+          href: "https://www.instagram.com/shroomsocietyasu",
           items: [],
         },
         {

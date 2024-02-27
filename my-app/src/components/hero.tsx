@@ -30,7 +30,7 @@ export default function Hero() {
         <div className="">
           <CardHeader>
             <CardTitle className="md:text-4xl md:pt-64 text-4xl font-bold text-white text-left ">
-              Welcome to ASU Shrooms Society
+              Welcome to Shrooms Society at ASU
             </CardTitle>
             <CardDescription className="text-white">
               Discover the fascinating world of mushrooms and learn how to

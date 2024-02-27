@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Shrooms Society @ASU",
-  description: "Landing page for Shrooms Society ASU",
+  description: "Landing page for Shrooms Society at ASU",
 };
 
 export default function RootLayout({
